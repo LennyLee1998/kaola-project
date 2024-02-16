@@ -1,0 +1,50 @@
+@import url(./variables.less);
+
+.search{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.9333vw;
+  line-height: 6.9333vw ;
+  padding: 1.4667vw 3.4667vw 2.2667vw;
+  color: #e31436;
+  background-color: #fff;
+ 
+
+  .left{
+    display: flex;
+    align-items: center;
+    width: 74.1333vw;
+    border: 1px solid;
+    border-radius: 4vw;
+    box-sizing: border-box;
+    padding-left:2.6667vw ;
+
+    .logo{
+      width: 3.2vw;
+      height: 3.3333vw;
+      background: url(../img/search-logo.png) no-repeat;
+      background-size: contain;
+      margin-right: 2.9333vw;
+    }
+
+    .text{
+
+      font-size: 3.4667vw;
+      color: #999;
+    }
+
+  }
+
+  .right{
+    width: 15.4667vw;
+    text-align: center;
+    border: 1px solid;
+    border-radius: .8vw;
+    font-size: @smallFontSize;
+    
+  }
+}

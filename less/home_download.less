@@ -1,0 +1,61 @@
+@import url(./variables.less);
+@import url(./mixins.less);
+
+.download {
+  display: flex;
+  justify-content: space-between;
+  height: 16vw;
+  box-sizing: border-box;
+  // background-color: orange;
+  border-bottom: .2667vw solid #e3e3e3;
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    padding: 0 3.2vw 0 3.2vw;
+    
+
+    .logo {
+      width: 10.6667vw;
+      height: 10.6667vw;
+      border-radius: 2.1333vw;
+      box-shadow: 0 0 0.93333vw rgba(0, 0, 0, .15);
+      background-color: #fff;
+    }
+
+    .info {
+      flex: 1;
+      overflow: hidden;
+      margin-left: 2.1333vw ;
+
+      .title {
+        color: #333;
+        font-size: @normalFontSize;
+        
+        .nowrap_ellipsis();
+      }
+
+      .desc {
+        color: #999;
+        font-size: @smallFontSize;
+      }
+
+    }
+
+  }
+
+  .right {
+    width: 25.2vw;
+    height: 16vw;
+    background-color: purple;
+    text-align: center;
+    line-height: 16vw;
+    font-size: @bigFontSize ;
+    color: #fff;
+    background-image: linear-gradient(to right, #ff0409, #ff3162);
+
+  }
+}
